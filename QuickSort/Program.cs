@@ -1,0 +1,4 @@
+﻿namespace QuickShort
+{
+    class program
+}
