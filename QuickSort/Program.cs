@@ -68,12 +68,12 @@
 
             pivot = arr[low];
 
-                while (i <= j)
+            while (i <= j)
             {
                 i++;
                 cmp_count++;
 
-                
+
                 //serach for an element less than or equal to pivot
                 while ((arr[j] > pivot) && (j >= low))
                 {
@@ -99,6 +99,14 @@
                 swap(low, j);
                 mov_count++;
             }
+            //sort the list on the left of pivot using quick sort
+            q_sort(low, j - 1);
+
+            //sort the list on the right of pivot using quick sort
+            q_sort(j + 1, high);
+        }
+
+
 
         }
 
