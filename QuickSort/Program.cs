@@ -24,6 +24,9 @@
                 else
                     Console.WriteLine("/nArray can have maximum 20 elements /n");
             }
+            Console.WriteLine("/n======================");
+            Console.WriteLine("enter array elements");
+            Console.WriteLine("/n======================");
         }
 
     }
